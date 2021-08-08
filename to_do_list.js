@@ -49,3 +49,11 @@ function deleted(itemIndex){
     localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
      update();
 }
+
+function clearStr(){
+    if(confirm("Do you want to clear All lists?")){
+        console.log("clearing the storage"); 
+        localStorage.clear();
+        update();
+    }
+}
